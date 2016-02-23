@@ -1,0 +1,5 @@
+master_index:
+    path:     /
+    defaults: { _controller: ProjectBundle:Default:index }
+    options:
+        expose: true

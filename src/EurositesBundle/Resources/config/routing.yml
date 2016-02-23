@@ -1,0 +1,5 @@
+eurosites_index:
+    path:     /
+    defaults: { _controller: EurositesBundle:Default:index }
+    options:
+        expose: true

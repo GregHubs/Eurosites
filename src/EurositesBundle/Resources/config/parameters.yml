@@ -1,0 +1,13 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: eurosites
+    database_user: gregpons
+    database_password: pons
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: d692ee6b155ad0a97e3cf8784d9359d02c8a5c1b
+    locale: fr

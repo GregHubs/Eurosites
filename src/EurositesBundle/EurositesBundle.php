@@ -1,12 +1,12 @@
 <?php
 
-namespace Eurosites\UserBundle;
+namespace EurositesBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class UserBundle extends Bundle
+class EurositesBundle extends Bundle
 {
     public function getParent() {
-        return 'FOSUserBundle';
+        return 'ProjectBundle';
     }
 }

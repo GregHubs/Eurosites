@@ -2,6 +2,9 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+    - { resource: fos_user.yml }
+    - { resource: lexik_maintenance.yml }
+    - { resource: ../../src/eurositesBundle/Resources/config/parameters.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -65,23 +68,6 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
-
-# Lexik maintenance configuration
-lexik_maintenance:
-    authorized:
-        path: /maintenance   # Optional. Authorized path, accepts regexs
-        host: "%web_path%"    # Optional. Authorized domain, accepts regexs
-        ips: ['127.0.0.1']   # Optional. Authorized ip addresses                                                     # Optional. Authorized route attributes
-    driver:
-        ttl: 3600            # Optional ttl option, can be not set
-         # File driver
-        class: '\Lexik\Bundle\MaintenanceBundle\Drivers\FileDriver'    # class for file driver
-
-# app/config/config.yml
-fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
-    firewall_name: main
-    user_class: Eurosites\UserBundle\Entity\User # MANDATORY
 
 services:
     fos_user.doctrine_registry:

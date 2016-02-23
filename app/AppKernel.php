@@ -15,7 +15,6 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new AppBundle\AppBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Genemu\Bundle\FormBundle\GenemuFormBundle(),
             new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
@@ -26,10 +25,11 @@ class AppKernel extends Kernel
             new blackknight467\StarRatingBundle\StarRatingBundle(),
             new Dizda\CloudBackupBundle\DizdaCloudBackupBundle(),
             new JMS\TwigJsBundle\JMSTwigJsBundle(),
-            //new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Eurosites\UserBundle\UserBundle()
-
+            new Master\UserBundle\UserBundle(),
+            new Master\ProjectBundle\ProjectBundle(),
+            new \EurositesBundle\EurositesBundle()
 
         );
 
